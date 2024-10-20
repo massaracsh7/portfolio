@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "Plants Landing Page",
+    "description": "A simple landing page for a plants shop.",
+    "github": "https://github.com/massaracsh7/plants",
+    "deploy": "https://massaracsh7.github.io/plants/",
+    "image": "1.png"
+  },
+  {
+    "id": 2,
+    "title": "Shelter Website Project",
+    "description": "A website project to help animals find a shelter.",
+    "github": "https://github.com/massaracsh7/shelter",
+    "deploy": "https://massaracsh7.github.io/shelter/index.html",
+    "image": "2.png"
+  },
+  {
+    "id": 3,
+    "title": "Minesweeper Game",
+    "description": "An interactive Minesweeper game.",
+    "github": "https://github.com/massaracsh7/minesweeper",
+    "deploy": "https://minesweeper-dusky-six.vercel.app",
+    "image": "3.png"
+  },
+  {
+    "id": 4,
+    "title": "CSS Selectors Game",
+    "description": "A game to learn CSS selectors.",
+    "github": "https://github.com/massaracsh7/css-selectors",
+    "deploy": "https://massaracsh7.github.io/css-selectors/",
+    "image": "4.png"
+  },
+  {
+    "id": 5,
+    "title": "MovieStream E-Commerce Application",
+    "description": "An e-commerce application for streaming movies.",
+    "github": "https://github.com/massaracsh7/movie-stream",
+    "deploy": "https://movie-stream-puce.vercel.app",
+    "image": "5.png"
+  },
+  {
+    "id": 6,
+    "title": "GraphiQL Playground/IDE",
+    "description": "A playground/IDE for making GraphQL requests.",
+    "github": "https://github.com/massaracsh7/graphiql-app",
+    "deploy": "https://graphiql-app-gold.vercel.app",
+    "image": "6.png"
+  },
+  {
+    "id": 7,
+    "title": "Rick and Morty Project",
+    "description": "A project based on the Rick and Morty API.",
+    "github": "https://github.com/massaracsh7/rss-react",
+    "deploy": "https://github.com/massaracsh7/rss-react",
+    "image": "7.png"
+  },
+  {
+    "id": 8,
+    "title": "FLOWER BOUTIQUE MIRANO Online Store",
+    "description": "An online store for the Flower Boutique Mirano.",
+    "github": "https://github.com/massaracsh7/mirano",
+    "deploy": "https://mirano-omega.vercel.app",
+    "image": "8.png"
+  }
+]
