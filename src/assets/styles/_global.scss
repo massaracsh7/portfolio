@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 *,
 *::before,
 *::after {
@@ -6,10 +8,10 @@
   box-sizing: border-box;
 }
 
-// body {
-//   background-color: $background-color;
-//   color: $text-color;
-//   font-size: $font-size-base;
-//   font-family: 'Roboto', sans-serif;
-//   line-height: 1.6;
-// }
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-size: $font-size-base;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}
