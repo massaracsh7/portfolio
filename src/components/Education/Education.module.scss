@@ -1,4 +1,4 @@
-.skills {
+.education {
   padding: 2rem;
   background-color: #f9f9f9;
   border-radius: 8px;
@@ -11,24 +11,15 @@
     color: #333;
   }
 
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-  }
-
   &__item {
     display: flex;
     align-items: center;
     padding: 1rem;
+    margin-bottom: 1rem;
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     transition: transform 0.2s, box-shadow 0.2s;
-    width: 150px;
-    justify-content: center;
-    text-align: center;
 
     &:hover {
       transform: translateY(-4px);
@@ -38,14 +29,25 @@
 
   &__icon {
     font-size: 2rem;
-    margin-right: 0.5rem;
+    margin-right: 1rem;
     color: #007acc;
     /* Blue color to highlight the icons */
   }
 
-  &__name {
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__course {
     font-size: 1.2rem;
     font-weight: bold;
     color: #333;
+    margin: 0;
+  }
+
+  &__institution {
+    font-size: 1rem;
+    color: #666;
   }
 }

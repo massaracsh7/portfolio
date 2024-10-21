@@ -1,11 +1,73 @@
 @use './variables' as *;
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
+html {
   box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul,
+ol,
+button {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+}
+
+input {
+  outline-color: transparent;
+  border: none;
+}
+
+button {
+  background-color: transparent;
+  outline-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 body {
@@ -15,3 +77,4 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
 }
+

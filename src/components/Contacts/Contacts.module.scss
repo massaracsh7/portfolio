@@ -1,36 +1,29 @@
 .contacts {
   padding: 2rem;
   background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
 
   &__title {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: #333;
-  }
-
-  &__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   &__item {
-    margin: 0.5rem 0;
-    font-size: 1rem;
-    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center; // Align icon and text vertically
 
-    a {
-      color: #007bff;
-      text-decoration: none;
-      transition: color 0.3s;
+    &__icon {
+      margin-right: 0.5rem; // Space between icon and text
+    }
+  }
 
-      &:hover {
-        color: #0056b3;
-      }
+  &__link {
+    color: #007bff; // Link color
+    text-decoration: none; // No underline
+
+    &:hover {
+      text-decoration: underline; // Underline on hover
     }
   }
 }
