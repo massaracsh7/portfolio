@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.mainContent {
+  flex: 2; // Adjust the flex property based on your design preference
+  margin-right: 20px; // Space between main content and sidebar
+
+  @media (max-width: 768px) {
+    margin-right: 0;
+    margin-bottom: 20px; // Space below main content on smaller screens
+  }
+}
+
+.sidebar {
+  flex: 1; // Adjust the flex property based on your design preference
+
+  @media (max-width: 768px) {
+    width: 100%; // Full width on smaller screens
+  }
+}

@@ -9,10 +9,21 @@ const Header: React.FC = () => {
       </div>
       <nav className={styles.navigation}>
         <ul className={styles.navList}>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li>
+            <a href="#hero" aria-label="About me">About me</a>
+          </li>
+          <li>
+            <a href="#projects" aria-label="My projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contacts" aria-label="Contact me">Contact</a>
+          </li>
+          <li>
+            <a href="#skills" aria-label="My skills">Skills</a>
+          </li>
+          <li>
+            <a href="#education" aria-label="My education">Education</a>
+          </li>
         </ul>
       </nav>
     </header>

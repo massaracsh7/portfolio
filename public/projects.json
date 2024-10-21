@@ -33,7 +33,7 @@
   },
   {
     "id": 5,
-    "title": "MovieStream E-Commerce Application",
+    "title": "MovieStream",
     "description": "An e-commerce application for streaming movies.",
     "github": "https://github.com/massaracsh7/movie-stream",
     "deploy": "https://movie-stream-puce.vercel.app",
@@ -57,7 +57,7 @@
   },
   {
     "id": 8,
-    "title": "FLOWER BOUTIQUE MIRANO Online Store",
+    "title": "Flower Boutique Mirano",
     "description": "An online store for the Flower Boutique Mirano.",
     "github": "https://github.com/massaracsh7/mirano",
     "deploy": "https://mirano-omega.vercel.app",

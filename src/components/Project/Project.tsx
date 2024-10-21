@@ -34,16 +34,17 @@ const ProjectsSection: React.FC = () => {
             />
             <h3 className={styles.projects__title}>{project.title}</h3>
             <p className={styles.projects__text}>{project.description}</p>
+            <div className={styles.projects__box}>
             <a href={project.github} target="_blank" rel="noopener noreferrer" className={styles.projects__link}>
               GitHub
             </a>
             <a href={project.deploy} target="_blank" rel="noopener noreferrer" className={styles.projects__link}>
               Live Demo
-            </a>
+            </a></div>
           </li>
         ))}
-      </ul>
-    </section>
+    </ul>
+    </section >
   );
 };
 

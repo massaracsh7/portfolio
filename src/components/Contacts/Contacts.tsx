@@ -6,7 +6,7 @@ const Contacts: React.FC = () => {
   const contacts = [
     {
       label: 'Email',
-      value: 'fatum7@egmail.com',
+      value: 'fatum7@gmail.com',
       href: 'mailto:fatum7@gmail.com', 
       icon: <FaEnvelope className={styles.contacts__icon} />, 
     },

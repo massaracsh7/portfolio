@@ -1,7 +1,11 @@
+@use '../../assets/styles/mixins' as *;
+
 .projects {
   padding: 2rem;
   background-color: #f9f9f9;
-
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
 
   &__title {
     font-size: 2rem;
@@ -13,6 +17,7 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
     gap: 1.5rem;
   }
 
@@ -36,7 +41,20 @@
     }
   }
 
+  &__title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #333333;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+  }
+
   &__card {
+    display: flex;
+    flex-direction: column; // Stack content vertically
+    justify-content: space-between; // Space out items
+    height: 100%;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -50,11 +68,6 @@
       transform: translateY(-5px);
     }
 
-    h3 {
-      font-size: 1.25rem;
-      margin-bottom: 0.5rem;
-      color: #007bff;
-    }
 
 
     p {
@@ -63,5 +76,9 @@
       line-height: 1.4;
     }
 
+  }
+
+  &__box {
+    @include flex-space;
   }
 }
