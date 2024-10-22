@@ -4,11 +4,93 @@
   align-items: center;
   justify-content: center;
   padding: 100px 20px;
-  //background: url('/assets/images/hero-background.jpg') no-repeat center center/cover;
-  background-color: #000;
+  background-color: #333;
   color: white;
   text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+
+
+
+  &__title {
+    font-size: 50px;
+    font-weight: 100;
+    position: relative;
+    color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-text-stroke: 1px #ff6347;
+    // Контур текста
+  }
+
+  &__title::before {
+    content: 'My name is Katsiaryna';
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    color: #ff6347;
+    animation: stroke 3s forwards ease-in-out;
+  }
+
+  &__text {
+    font-family: 'Courier New', Courier, monospace;
+    white-space: normal;
+    overflow: hidden;
+    border-right: 3px solid #ff6347; // Имитация курсора
+    width: 100%;
+    animation: typing 3.5s steps(40, end) forwards,
+      blink 0.75s step-end infinite;
+  }
 }
+
+// Анимация печати текста
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%; // После анимации ширина остаётся на 100%
+  }
+}
+
+// Анимация мигания курсора
+@keyframes blink {
+
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #ff6347;
+  }
+}
+
+@keyframes stroke {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 
 .ctaButton {
   margin-top: 20px;

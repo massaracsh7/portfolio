@@ -17,7 +17,7 @@ const Education: React.FC = () => {
 
   return (
     <section className={styles.education} id="education">
-      <h2 className={styles.education__title}>My Education</h2>
+      <h2 className={styles.education__title}>MY LEARNING JOURNEY</h2>
       <ul className={styles.education__list}>
         {educationList.map((item, index) => (
           <li key={index} className={styles.education__item}>

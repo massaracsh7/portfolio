@@ -4,8 +4,9 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 1rem;
-  
+
   &__title {
+    font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
     margin-bottom: 1.5rem;
     text-align: center;
@@ -31,7 +32,7 @@
   &__icon {
     font-size: 2rem;
     margin-right: 1rem;
-    color: #007acc;
+    color: #ff6347;
     /* Blue color to highlight the icons */
   }
 

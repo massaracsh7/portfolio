@@ -6,6 +6,7 @@
   margin-bottom: 1rem;
 
   &__title {
+    font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
     margin-bottom: 1.5rem;
   }
@@ -22,10 +23,12 @@
   }
 
   &__link {
-    color: #007bff; // Link color
-    text-decoration: none; // No underline
+    color: #333; // Link color
+    text-decoration: none;
+    transition: color, text-decoration 0.5s;
 
     &:hover {
+      color: #ff6347;
       text-decoration: underline; // Underline on hover
     }
   }

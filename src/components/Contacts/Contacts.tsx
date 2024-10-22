@@ -14,24 +14,24 @@ const Contacts: React.FC = () => {
       label: 'Discord',
       value: 'Katsiaryna2284',
       href: 'https://discordapp.com/users/katsiaryna2284',
-      icon: <FaDiscord className={styles.contacts__icon} />, // Add icon
+      icon: <FaDiscord className={styles.contacts__icon} />,
     },
     {
       label: 'GitHub',
       value: 'massaracsh7',
       href: 'https://github.com/massaracsh7',
-      icon: <FaGithub className={styles.contacts__icon} />, // Add icon
+      icon: <FaGithub className={styles.contacts__icon} />,
     },
   ];
 
   return (
     <section className={styles.contacts} id="contacts">
-      <h2 className={styles.contacts__title}>Contact Me</h2>
+      <h2 className={styles.contacts__title}>LET'S CONNECT</h2>
       <ul className={styles.contacts__list}>
         {contacts.map((contact, index) => (
           <li key={index} className={styles.contacts__item}>
-            {contact.icon} {/* Display the icon */}
-            <span className={styles.contacts__label}>{contact.label}:</span>
+            {contact.icon}
+            <span className={styles.contacts__label}>{contact.label}: &nbsp; </span>
             <a href={contact.href} className={styles.contacts__link}>
               {contact.value}
             </a>

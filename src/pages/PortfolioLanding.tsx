@@ -18,16 +18,17 @@ const PortfolioLanding: React.FC = () => {
           <div id="projects">
             <Project />
           </div>
-          <div id="education">
-            <Education />
-          </div>
+
         </div>
         <aside className={styles.sidebar}>
+          <div id="contacts">
+            <Contacts />
+          </div>
           <div id="skills">
             <Skills />
           </div>
-          <div id="contacts">
-            <Contacts />
+          <div id="education">
+            <Education />
           </div>
         </aside>
       </div>
