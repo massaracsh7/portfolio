@@ -1,16 +1,19 @@
+@use '../../assets/styles/variables' as *;
+@use '../../assets/styles/placeholder' as *;
+@use '../../assets/styles/mixins' as *;
+
 .education {
   padding: 2rem;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: $background-color;
+  border-radius: 0.5rem;
+  @extend %main-shadow;
   margin-bottom: 1rem;
 
   &__title {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2rem;
+    @extend %font-secondary;
+    @include font(2rem);
     margin-bottom: 1.5rem;
     text-align: center;
-    color: #333;
   }
 
   &__item {
@@ -18,22 +21,21 @@
     align-items: center;
     padding: 1rem;
     margin-bottom: 1rem;
-    background-color: #ffffff;
+    background-color: $white-color;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     transition: transform 0.2s, box-shadow 0.2s;
 
     &:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      transform: translateY(-0.25rem);
+      @extend %main-shadow;
     }
   }
 
   &__icon {
     font-size: 2rem;
     margin-right: 1rem;
-    color: #ff6347;
-    /* Blue color to highlight the icons */
+    color: $primary-color;
   }
 
   &__content {
@@ -42,14 +44,11 @@
   }
 
   &__course {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #333;
-    margin: 0;
+    @include font(1.2rem, 1.6, 600);
+    color: $secondary-color;
   }
 
   &__institution {
-    font-size: 1rem;
-    color: #666;
+    @include font(1rem);
   }
 }

@@ -1,100 +1,92 @@
-.header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #333;
-  color: white;
-  padding: 15px 30px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+@use '../../assets/styles/variables' as *;
+@use '../../assets/styles/placeholder' as *;
+@use '../../assets/styles/mixins' as *;
 
-.logo h1 {
-  margin: 0;
-  font-size: 24px;
+.header {
+  background-color: $secondary-color;
+  color: $white-color;
+  padding: 0.94rem 1.88rem;
+  @extend %main-shadow;
 }
 
 .navigation {
-  display: flex;
-}
+  @extend %flex-center;
 
-.navList {
-  display: flex;
-  gap: 1.2rem;
+  &__list {
+    display: flex;
+    gap: 1.2rem;
+  }
 
-  li {
+  &__item {
     position: relative;
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+    transform: translateY(20px);
 
-    a {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 18px;
-      text-transform: uppercase;
-      text-decoration: none;
-      position: relative;
-      padding: 5px 0;
-      transition: color 0.3s ease;
-      letter-spacing: 1.2px;
+    &:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+
+    &:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+
+    &:nth-child(4) {
+      animation-delay: 0.4s;
+    }
+
+    &:nth-child(5) {
+      animation-delay: 0.5s;
+    }
+  }
+
+  &__link {
+    @extend %font-secondary;
+    @include font(1.2rem);
+    @include transition(color);
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    padding: 0.3125rem 0;
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background-color: $primary-color;
+      transform: scaleX(0);
+      transform-origin: right;
+      @include transition(transform);
+    }
+
+    &:hover {
+      color: $primary-color;
 
       &:before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        height: 2px;
-        width: 100%;
-        background-color: #ff6347;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform 0.3s ease;
-      }
-
-      &:hover {
-        color: #ff6347;
-
-        &:before {
-          transform: scaleX(1);
-          transform-origin: left;
-        }
+        transform: scaleX(1);
+        transform-origin: left;
       }
     }
   }
 }
 
-// Анимация появления текста
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(1.25rem);
   }
 
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-// Применение анимации к каждому элементу меню
-.navList li {
-  animation: fadeInUp 0.6s ease forwards;
-  opacity: 0;
-  transform: translateY(20px);
-
-  &:nth-child(1) {
-    animation-delay: 0.1s;
-  }
-
-  &:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-
-  &:nth-child(3) {
-    animation-delay: 0.3s;
-  }
-
-  &:nth-child(4) {
-    animation-delay: 0.4s;
-  }
-
-  &:nth-child(5) {
-    animation-delay: 0.5s;
   }
 }

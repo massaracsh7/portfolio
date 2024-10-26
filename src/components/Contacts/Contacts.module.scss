@@ -1,13 +1,17 @@
+@use '../../assets/styles/variables' as *;
+@use '../../assets/styles/placeholder' as *;
+@use '../../assets/styles/mixins' as *;
+
 .contacts {
   padding: 2rem;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: $background-color;
+  border-radius: 0.5rem;
+  @extend %main-shadow;
   margin-bottom: 1rem;
 
   &__title {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2rem;
+    @extend %font-secondary;
+    @include font(2rem);
     margin-bottom: 1.5rem;
   }
 
@@ -15,21 +19,21 @@
     font-size: 1.2rem;
     margin-bottom: 1rem;
     display: flex;
-    align-items: center; // Align icon and text vertically
+    align-items: center;
 
     &__icon {
-      margin-right: 0.5rem; // Space between icon and text
+      margin-right: 0.5rem;
     }
   }
 
   &__link {
-    color: #333; // Link color
+    color: $text-color;
     text-decoration: none;
-    transition: color, text-decoration 0.5s;
+    @include transition(color);
 
     &:hover {
-      color: #ff6347;
-      text-decoration: underline; // Underline on hover
+      color: $primary-color;
+      text-decoration: underline;
     }
   }
 }

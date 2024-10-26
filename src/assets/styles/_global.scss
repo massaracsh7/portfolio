@@ -1,4 +1,6 @@
 @use './variables' as *;
+@use './placeholder' as *;
+@use './mixins' as *;
 
 html {
   box-sizing: border-box;
@@ -74,8 +76,6 @@ button {
 body {
   background-color: $background-color;
   color: $text-color;
-  font-size: $font-size-base;
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
+  @extend %font-primary;
+  @include font($font-size-base, 1.6);
 }
-

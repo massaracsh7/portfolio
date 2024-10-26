@@ -1,65 +1,59 @@
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 100px 20px;
-  background-color: #333;
-  color: white;
-  text-align: center;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1rem;
+@use '../../assets/styles/variables' as *;
+@use '../../assets/styles/placeholder' as *;
+@use '../../assets/styles/mixins' as *;
 
+.hero {
+  @extend %flex-center;
+  @extend %main-shadow;
+  flex-direction: column;
+  padding: 6.25rem 1.25rem;
+  background-color: $secondary-color;
+  color: $white-color;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(1.25rem);
   animation: fadeInUp 1s ease-out forwards;
 
-
-
   &__title {
-    font-size: 50px;
-    font-weight: 100;
     position: relative;
     color: transparent;
-    font-family: 'Montserrat', sans-serif;
-    -webkit-text-stroke: 1px #ff6347;
-    // Контур текста
+    @include font(3.125rem, 1.6, 100);
+    @extend %font-secondary;
+    -webkit-text-stroke: 0.0625rem $primary-color;
   }
 
   &__title::before {
     content: 'My name is Katsiaryna';
     position: absolute;
-    top: -60px;
+    top: -3.75rem;
     left: 0;
     width: 100%;
-    color: #ff6347;
+    color: $primary-color;
     animation: stroke 3s forwards ease-in-out;
   }
 
   &__text {
-    font-family: 'Courier New', Courier, monospace;
+    @extend %font-decorative;
     white-space: normal;
     overflow: hidden;
-    border-right: 3px solid #ff6347; // Имитация курсора
+    border-right: 0.1875rem solid $primary-color;
     width: 100%;
-    animation: typing 3.5s steps(40, end) forwards,
-      blink 0.75s step-end infinite;
+    animation: typing 3.5s steps(40, end) forwards, blink 0.75s step-end infinite;
   }
 }
 
-// Анимация печати текста
 @keyframes typing {
   from {
     width: 0;
   }
 
   to {
-    width: 100%; // После анимации ширина остаётся на 100%
+    width: 100%;
   }
 }
 
-// Анимация мигания курсора
 @keyframes blink {
 
   from,
@@ -68,7 +62,7 @@
   }
 
   50% {
-    border-color: #ff6347;
+    border-color: $primary-color;
   }
 }
 
@@ -82,26 +76,9 @@
   }
 }
 
-
 @keyframes fadeInUp {
   to {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-
-
-.ctaButton {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.ctaButton:hover {
-  background-color: #0056b3;
 }
