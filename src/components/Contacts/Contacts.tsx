@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaEnvelope, FaDiscord, FaGithub } from 'react-icons/fa'; 
+import { FaEnvelope, FaDiscord, FaGithub, FaTelegram } from 'react-icons/fa';
 import styles from './Contacts.module.scss';
 
 const Contacts: React.FC = () => {
@@ -7,8 +7,8 @@ const Contacts: React.FC = () => {
     {
       label: 'Email',
       value: 'fatum7@gmail.com',
-      href: 'mailto:fatum7@gmail.com', 
-      icon: <FaEnvelope className={styles.contacts__icon} />, 
+      href: 'mailto:fatum7@gmail.com',
+      icon: <FaEnvelope className={styles.contacts__icon} />,
     },
     {
       label: 'Discord',
@@ -21,6 +21,12 @@ const Contacts: React.FC = () => {
       value: 'massaracsh7',
       href: 'https://github.com/massaracsh7',
       icon: <FaGithub className={styles.contacts__icon} />,
+    },
+    {
+      label: 'Telegram',
+      value: 'massaracsh',
+      href: 'https://t.me/massaracsh',
+      icon: <FaTelegram className={styles.contacts__icon} />,
     },
   ];
 

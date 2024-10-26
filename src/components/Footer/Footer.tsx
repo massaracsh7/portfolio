@@ -7,9 +7,10 @@ const Footer: React.FC = () => {
       <div className={styles.footerContent}>
         <p>&copy; {new Date().getFullYear()} My Portfolio. All rights reserved.</p>
         <div className={styles.socialLinks}>
-          <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://twitter.com/your-username" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://github.com/massaracsh7" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="mailto:fatum7@gmail.com" target="_blank" rel="noopener noreferrer">Gmail</a>
+          <a href="https://discordapp.com/users/katsiaryna2284" target="_blank" rel="noopener noreferrer">Discord</a>
+          <a href="https://t.me/massaracsh" target="_blank" rel="noopener noreferrer">Telegram</a>
         </div>
       </div>
     </footer>
