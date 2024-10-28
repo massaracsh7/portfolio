@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaJs, FaReact, FaFigma, FaHtml5, FaCss3Alt } from 'react-icons/fa';
-import { SiTypescript, SiRedux, SiSass, SiAdobephotoshop } from 'react-icons/si';
+import { FaJs, FaReact, FaFigma, FaHtml5, FaCss3Alt, FaGitAlt } from 'react-icons/fa';
+import { SiTypescript, SiRedux, SiSass, SiAdobephotoshop,  } from 'react-icons/si';
 import styles from './Skills.module.scss';
 
 const Skills: React.FC = () => {
@@ -14,6 +14,7 @@ const Skills: React.FC = () => {
     { name: 'Redux', icon: <SiRedux /> },
     { name: 'Figma', icon: <FaFigma /> },
     { name: 'Photoshop', icon: <SiAdobephotoshop /> },
+    { name: 'Git', icon: <FaGitAlt /> },
   ];
 
   return (

@@ -1,94 +1,124 @@
+@use '../../assets/styles/variables' as *;
+@use '../../assets/styles/placeholder' as *;
+@use '../../assets/styles/mixins' as *;
+
 .modal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.7); // Semi-transparent backdrop
-  z-index: 1000;
+  @extend %flex-center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
 
   &__content {
     position: relative;
-    background-color: #fff;
-    border-radius: 12px;
-    padding: 2rem;
-    max-width: 800px; // Adjust for smaller screens
+    background-color: $white-color;
+    border-radius: 0.75rem; // 12px to rem
+    padding: 2rem; // 32px to rem
+    max-width: 50rem; // 800px to rem
     width: 90%;
-    z-index: 1001;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    z-index: 101;
+    box-shadow: 0 0.625rem 1.5625rem rgba(0, 0, 0, 0.3); // 10px to rem
     animation: modalFadeIn 0.3s ease;
+    overflow-y: auto;
+    max-height: 90vh;
 
     @media (max-width: 768px) {
       padding: 1.5rem;
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 480) {
       padding: 1rem;
     }
   }
 
   &__close {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 0.94rem;
+    right: 0.94rem;
     background: none;
     border: none;
-    font-size: 2rem;
-    color: #ff6347;
+    font-size: 2rem; 
+    color: $secondary-color;
     cursor: pointer;
     transition: color 0.3s ease;
 
     &:hover {
-      color: #ff4500;
+      color: $primary-color;
     }
   }
 
   &__title {
-    font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 1rem;
+    @include font(1.8rem, 1.6, 600);
+    color: $text-color;
+    margin-bottom: 1rem; 
     text-align: center;
-    font-weight: bold;
+
+    @media (max-width: 480px) {
+      @include font(1.5rem);
+    }
   }
 
   &__image {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     margin-bottom: 1rem;
+    object-fit: cover;
+    max-height: 25rem; 
   }
 
   &__description {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.5;
-    margin-bottom: 1rem;
+    color: $secondary-color;
+    margin-bottom: 1rem; 
+    @include font(1rem, 1.5);
+    text-align: justify;
 
     &:last-of-type {
       margin-bottom: 2rem;
     }
   }
 
-  &__links {
+  &__techList {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  &__techItem {
+    @extend %flex-center;
+    background: $white-color;
+    border-radius: 0.375rem;
+    padding: 0.4rem 0.6rem; 
+    color: $text-color;
+    @include font(0.9rem);
+  }
+
+  &__techIcon {
+    margin-right: 0.4rem;
+    font-size: 1.2rem; 
+    @include font(1.2rem);
+    color: $primary-color;
+  }
+
+  &__links {
+    @extend flex-center;
+    gap: 1rem;
     margin-top: 1.5rem;
   }
 
   &__link {
-    font-size: 1rem;
-    color: #ff6347;
-    text-decoration: none;
-    border: 2px solid #ff6347;
+    @include font(1rem);
+    color: $primary-color;
+    border: 0.125rem solid $primary-color; 
     padding: 0.5rem 1rem;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     transition: background-color 0.3s ease, color 0.3s ease;
 
     &:hover {
-      background-color: #ff6347;
-      color: #fff;
+      background-color: $primary-color;
+      color: $white-color;
     }
   }
 
@@ -103,7 +133,6 @@
   }
 }
 
-// Modal fade-in animation
 @keyframes modalFadeIn {
   from {
     opacity: 0;

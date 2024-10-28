@@ -6,7 +6,12 @@
     "github": "https://github.com/massaracsh7/plants",
     "deploy": "https://massaracsh7.github.io/plants/",
     "image": "1.png",
-    "details": "Technologies: HTML5, CSS/SCSS, JavaScript, Webpack"
+    "details": [
+      "HTML5",
+      "SCSS",
+      "JavaScript",
+      "Webpack"
+    ]
   },
   {
     "id": 2,
@@ -15,7 +20,12 @@
     "github": "https://github.com/massaracsh7/shelter",
     "deploy": "https://massaracsh7.github.io/shelter/index.html",
     "image": "2.png",
-    "details": "Technologies: HTML5, CSS/SCSS, JavaScript, Webpack"
+    "details": [
+      "HTML5",
+      "SCSS",
+      "JavaScript",
+      "Webpack"
+    ]
   },
   {
     "id": 3,
@@ -24,7 +34,11 @@
     "github": "https://github.com/massaracsh7/minesweeper",
     "deploy": "https://minesweeper-dusky-six.vercel.app",
     "image": "3.png",
-    "details": "Technologies: HTML5, CSS, JavaScript"
+    "details": [
+      "HTML5",
+      "CSS",
+      "JavaScript"
+    ]
   },
   {
     "id": 4,
@@ -33,7 +47,13 @@
     "github": "https://github.com/massaracsh7/css-selectors",
     "deploy": "https://massaracsh7.github.io/css-selectors/",
     "image": "4.png",
-    "details": "Technologies: TypeScript, SCSS, Webpack, Jest"
+    "details": [
+      "HTML5",
+      "SCSS",
+      "TypeScript",
+      "Webpack",
+      "Jest"
+    ]
   },
   {
     "id": 5,
@@ -42,7 +62,14 @@
     "github": "https://github.com/massaracsh7/movie-stream",
     "deploy": "https://movie-stream-puce.vercel.app",
     "image": "5.png",
-    "details": "Technologies: React, TypeScript, Vite, ESLint, Jest, API CommerceTools"
+    "details": [
+      "React",
+      "SCSS",
+      "TypeScript",
+      "Vite",
+      "API CommerceTools",
+      "Jest"
+    ]
   },
   {
     "id": 6,
@@ -51,7 +78,14 @@
     "github": "https://github.com/massaracsh7/graphiql-app",
     "deploy": "https://graphiql-app-gold.vercel.app",
     "image": "6.png",
-    "details": "Technologies: React, Redux, TypeScript, Vite, ESLint, Jest"
+    "details": [
+      "React",
+      "Redux",
+      "SCSS",
+      "TypeScript",
+      "Vite",
+      "Jest"
+    ]
   },
   {
     "id": 7,
@@ -60,7 +94,14 @@
     "github": "https://github.com/massaracsh7/rss-react",
     "deploy": "https://rss-react-delta.vercel.app",
     "image": "7.png",
-    "details": "Technologies: React, Redux, TypeScript, Vite, ESLint, Jest"
+    "details": [
+      "React",
+      "Redux",
+      "SCSS",
+      "TypeScript",
+      "Vite",
+      "Jest"
+    ]
   },
   {
     "id": 8,
@@ -69,7 +110,13 @@
     "github": "https://github.com/massaracsh7/mirano",
     "deploy": "https://mirano-omega.vercel.app",
     "image": "8.png",
-    "details": "Technologies: React, Redux, SCSS, TypeScript, Vite"
+    "details": [
+      "React",
+      "Redux",
+      "SCSS",
+      "TypeScript",
+      "Vite"
+    ]
   },
   {
     "id": 9,
@@ -78,7 +125,12 @@
     "github": "https://github.com/massaracsh7/petplanet",
     "deploy": "https://petplanet-omega.vercel.app",
     "image": "9.png",
-    "details": "Technologies: HTML, SCSS, JavaScript, Vite"
+    "details": [
+      "HTML5",
+      "SCSS",
+      "JavaScript",
+      "Vite"
+    ]
   },
   {
     "id": 10,
@@ -87,6 +139,12 @@
     "github": "https://github.com/massaracsh7/cup-time",
     "deploy": "https://cup-time-five.vercel.app",
     "image": "10.png",
-    "details": "Technologies: React, Redux, SCSS, TypeScript, Vite"
+    "details": [
+      "React",
+      "Redux",
+      "SCSS",
+      "TypeScript",
+      "Vite"
+    ]
   }
 ]

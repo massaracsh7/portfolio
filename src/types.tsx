@@ -1,3 +1,5 @@
+type Technology = 'HTML5' | 'CSS' | 'SCSS' | 'JavaScript' | 'Webpack' | 'TypeScript' | 'React' | 'Git' | 'Vite' | 'Jest';
+
 export interface Project {
   id: number;
   title: string;
@@ -5,5 +7,5 @@ export interface Project {
   image: string;
   github: string;
   deploy: string;
-  details: string;
+  details: Technology[];
 }
