@@ -3,17 +3,6 @@
 @use '../../assets/styles/mixins' as *;
 
 .contacts {
-  padding: 2rem;
-  background-color: $background-color;
-  border-radius: 0.5rem;
-  @extend %main-shadow;
-  margin-bottom: 1rem;
-
-  &__title {
-    @extend %font-secondary;
-    @include font(2rem);
-    margin-bottom: 1.5rem;
-  }
 
   &__item {
     font-size: 1.2rem;

@@ -31,8 +31,8 @@ const Contacts: React.FC = () => {
   ];
 
   return (
-    <section className={styles.contacts} id="contacts">
-      <h2 className={styles.contacts__title}>LET'S CONNECT</h2>
+    <section className={`${styles.contacts} section`} id="contacts">
+      <h2 className={'title'}>LET'S CONNECT</h2>
       <ul className={styles.contacts__list}>
         {contacts.map((contact, index) => (
           <li key={index} className={styles.contacts__item}>

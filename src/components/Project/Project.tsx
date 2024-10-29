@@ -24,8 +24,8 @@ const ProjectsSection: React.FC = () => {
   };
 
   return (
-    <section className={styles.projects} id="projects">
-      <h2 className={styles.projects__title}>WHAT I'VE BUILT</h2>
+    <section className={`${styles.projects} section`} id="projects">
+      <h2 className={'title'}>WHAT I'VE BUILT</h2>
       <ul className={styles.projects__list}>
         {projects.map((project) => (
           <li key={project.id} className={styles.projects__card} onClick={() => handleCardClick(project)}>
@@ -39,7 +39,6 @@ const ProjectsSection: React.FC = () => {
         ))}
       </ul>
 
-      {/* Модальное окно */}
       {selectedProject && (
         <Modal project={selectedProject} onClose={closeModal} />
       )}

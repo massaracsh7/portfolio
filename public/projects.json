@@ -1,30 +1,34 @@
 [
   {
     "id": 1,
-    "title": "Plants Landing Page",
-    "description": "Plants is a landing page designed to showcase garden plant growing and care services.",
-    "github": "https://github.com/massaracsh7/plants",
-    "deploy": "https://massaracsh7.github.io/plants/",
+    "title": "MovieStream",
+    "description": "An E-Commerce application distributing the latest movie releases from leading streaming platforms. It features quick search, an intuitive registration panel, and smooth checkout with a user-friendly interface.",
+    "github": "https://github.com/massaracsh7/movie-stream",
+    "deploy": "https://movie-stream-puce.vercel.app",
     "image": "1.png",
     "details": [
-      "HTML5",
+      "React",
       "SCSS",
-      "JavaScript",
-      "Webpack"
+      "TypeScript",
+      "Vite",
+      "API CommerceTools",
+      "Jest"
     ]
   },
   {
     "id": 2,
-    "title": "Shelter Website",
-    "description": "A website built to help animals find shelter. The project consists of two pages, designed to guide users in providing support to animals in need.",
-    "github": "https://github.com/massaracsh7/shelter",
-    "deploy": "https://massaracsh7.github.io/shelter/index.html",
+    "title": "GraphiQL Playground/IDE",
+    "description": "An open-source playground and IDE for GraphQL requests. GraphiQL provides an interactive graphical interface to interact with GraphQL APIs.",
+    "github": "https://github.com/massaracsh7/graphiql-app",
+    "deploy": "https://graphiql-app-gold.vercel.app",
     "image": "2.png",
     "details": [
-      "HTML5",
+      "React",
+      "Redux",
       "SCSS",
-      "JavaScript",
-      "Webpack"
+      "TypeScript",
+      "Vite",
+      "Jest"
     ]
   },
   {
@@ -57,34 +61,30 @@
   },
   {
     "id": 5,
-    "title": "MovieStream",
-    "description": "An E-Commerce application distributing the latest movie releases from leading streaming platforms. It features quick search, an intuitive registration panel, and smooth checkout with a user-friendly interface.",
-    "github": "https://github.com/massaracsh7/movie-stream",
-    "deploy": "https://movie-stream-puce.vercel.app",
+    "title": "Plants Landing Page",
+    "description": "Plants is a landing page designed to showcase garden plant growing and care services.",
+    "github": "https://github.com/massaracsh7/plants",
+    "deploy": "https://massaracsh7.github.io/plants/",
     "image": "5.png",
     "details": [
-      "React",
+      "HTML5",
       "SCSS",
-      "TypeScript",
-      "Vite",
-      "API CommerceTools",
-      "Jest"
+      "JavaScript",
+      "Webpack"
     ]
   },
   {
     "id": 6,
-    "title": "GraphiQL Playground/IDE",
-    "description": "An open-source playground and IDE for GraphQL requests. GraphiQL provides an interactive graphical interface to interact with GraphQL APIs.",
-    "github": "https://github.com/massaracsh7/graphiql-app",
-    "deploy": "https://graphiql-app-gold.vercel.app",
+    "title": "Shelter Website",
+    "description": "A website built to help animals find shelter. The project consists of two pages, designed to guide users in providing support to animals in need.",
+    "github": "https://github.com/massaracsh7/shelter",
+    "deploy": "https://massaracsh7.github.io/shelter/index.html",
     "image": "6.png",
     "details": [
-      "React",
-      "Redux",
+      "HTML5",
       "SCSS",
-      "TypeScript",
-      "Vite",
-      "Jest"
+      "JavaScript",
+      "Webpack"
     ]
   },
   {
