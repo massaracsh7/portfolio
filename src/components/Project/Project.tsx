@@ -16,16 +16,15 @@ const ProjectsSection: React.FC = () => {
   }, []);
 
   const handleCardClick = (project: Project) => {
-    setSelectedProject(project); 
+    setSelectedProject(project);
   };
 
   const closeModal = () => {
-    setSelectedProject(null); 
+    setSelectedProject(null);
   };
 
   return (
-    <section className={`${styles.projects} section`} id="projects">
-      <h2 className={'title'}>WHAT I'VE BUILT</h2>
+    <section className={`${styles.projects} section`} id="projects"> <h2 className={'title'}>WHAT I'VE BUILT</h2>
       <ul className={styles.projects__list}>
         {projects.map((project) => (
           <li key={project.id} className={styles.projects__card} onClick={() => handleCardClick(project)}>

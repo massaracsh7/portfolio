@@ -10,7 +10,6 @@
   @extend %main-shadow;
   margin-bottom: 1rem;
 
-
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -32,16 +31,49 @@
       transform: translateY(-0.25rem);
       @extend %main-shadow;
     }
+
+    @include media-tablet {
+      width: 8rem;
+    }
+
+    @include media-mobile {
+      width: 7rem;
+      padding: 0.8rem;
+    }
   }
 
   &__icon {
     font-size: 2rem;
     margin-right: 0.5rem;
     color: $primary-color;
+
+    @include media-tablet {
+      font-size: 1.8rem;
+    }
+
+    @include media-mobile {
+      font-size: 1.5rem;
+    }
   }
 
   &__name {
     @include font(1.2rem, 1.4, 600);
     color: $secondary-color;
+
+    @include media-tablet {
+      @include font(1.1rem, 1.4, 600);
+    }
+
+    @include media-mobile {
+      @include font(1rem, 1.4, 600);
+    }
+  }
+
+  @include media-tablet {
+    padding: 1.5rem;
+  }
+
+  @include media-mobile {
+    padding: 1rem;
   }
 }
