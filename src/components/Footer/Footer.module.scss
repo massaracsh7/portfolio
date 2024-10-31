@@ -1,0 +1,32 @@
+@use '../../assets/styles/variables' as *;
+@use '../../assets/styles/placeholder' as *;
+@use '../../assets/styles/mixins' as *;
+
+.footer {
+  background-color: $secondary-color;
+  color: $white-color;
+  padding: 15px 30px;
+  text-align: center;
+
+  &__content {
+    @extend %flex-center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__link {
+    color: $primary-color;
+    text-decoration: none;
+    @include transition(color);
+
+    &:hover {
+      color: $white-color;
+    }
+  }
+
+}

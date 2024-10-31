@@ -1,0 +1,49 @@
+@use '../../assets/styles/variables' as *;
+@use '../../assets/styles/placeholder' as *;
+@use '../../assets/styles/mixins' as *;
+
+.contacts {
+  &__item {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+
+    &__icon {
+      margin-right: 0.5rem;
+    }
+
+    @include media-tablet {
+      justify-content: center;
+      font-size: 1rem;
+      margin-bottom: 0.8rem;
+    }
+
+    @include media-mobile {
+      font-size: 0.9rem;
+      margin-bottom: 0.6rem;
+      flex-direction: column;
+      align-items: flex-start;
+
+      &__icon {
+        margin-right: 0;
+        margin-bottom: 0.3rem;
+      }
+    }
+  }
+
+  &__link {
+    color: $text-color;
+    text-decoration: none;
+    @include transition(color);
+
+    &:hover {
+      color: $primary-color;
+      text-decoration: underline;
+    }
+
+    @include media-mobile {
+      font-size: 0.9rem;
+    }
+  }
+}

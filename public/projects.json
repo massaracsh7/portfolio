@@ -1,0 +1,150 @@
+[
+  {
+    "id": 1,
+    "title": "MovieStream",
+    "description": "An E-Commerce application distributing the latest movie releases from leading streaming platforms. It features quick search, an intuitive registration panel, and smooth checkout with a user-friendly interface.",
+    "github": "https://github.com/massaracsh7/movie-stream",
+    "deploy": "https://movie-stream-puce.vercel.app",
+    "image": "1.png",
+    "details": [
+      "React",
+      "SCSS",
+      "TypeScript",
+      "Vite",
+      "API CommerceTools",
+      "Jest"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "GraphiQL Playground/IDE",
+    "description": "An open-source playground and IDE for GraphQL requests. GraphiQL provides an interactive graphical interface to interact with GraphQL APIs.",
+    "github": "https://github.com/massaracsh7/graphiql-app",
+    "deploy": "https://graphiql-app-gold.vercel.app",
+    "image": "2.png",
+    "details": [
+      "React",
+      "Redux",
+      "SCSS",
+      "TypeScript",
+      "Vite",
+      "Jest"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Minesweeper Game",
+    "description": "A classic Minesweeper game with multiple difficulty levels, responsive UI, sound effects, and themes. Advanced features enhance the traditional gameplay experience.",
+    "github": "https://github.com/massaracsh7/minesweeper",
+    "deploy": "https://minesweeper-dusky-six.vercel.app",
+    "image": "3.png",
+    "details": [
+      "HTML5",
+      "CSS",
+      "JavaScript"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "CSS Selectors Game",
+    "description": "An interactive game designed to help users learn and master CSS selectors by solving challenges based on real-world scenarios.",
+    "github": "https://github.com/massaracsh7/css-selectors",
+    "deploy": "https://massaracsh7.github.io/css-selectors/",
+    "image": "4.png",
+    "details": [
+      "HTML5",
+      "SCSS",
+      "TypeScript",
+      "Webpack",
+      "Jest"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Plants Landing Page",
+    "description": "Plants is a landing page designed to showcase garden plant growing and care services.",
+    "github": "https://github.com/massaracsh7/plants",
+    "deploy": "https://massaracsh7.github.io/plants/",
+    "image": "5.png",
+    "details": [
+      "HTML5",
+      "SCSS",
+      "JavaScript",
+      "Webpack"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Shelter Website",
+    "description": "A website built to help animals find shelter. The project consists of two pages, designed to guide users in providing support to animals in need.",
+    "github": "https://github.com/massaracsh7/shelter",
+    "deploy": "https://massaracsh7.github.io/shelter/index.html",
+    "image": "6.png",
+    "details": [
+      "HTML5",
+      "SCSS",
+      "JavaScript",
+      "Webpack"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Rick and Morty API Project",
+    "description": "A project utilizing the Rick and Morty API. It displays characters and episodes from the show, offering search and pagination features in a simple interface.",
+    "github": "https://github.com/massaracsh7/rss-react",
+    "deploy": "https://rss-react-delta.vercel.app",
+    "image": "7.png",
+    "details": [
+      "React",
+      "Redux",
+      "SCSS",
+      "TypeScript",
+      "Vite",
+      "Jest"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Flower Boutique Mirano",
+    "description": "An online store for Flower Boutique Mirano, offering exclusive handcrafted bouquets, personalized greeting cards, and unique toys. Some data may take a few seconds to load from an external API.",
+    "github": "https://github.com/massaracsh7/mirano",
+    "deploy": "https://mirano-omega.vercel.app",
+    "image": "8.png",
+    "details": [
+      "React",
+      "Redux",
+      "SCSS",
+      "TypeScript",
+      "Vite"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "PetShop Online Store",
+    "description": "A modern online store offering a wide range of pet products with a convenient interface. Some data may take time to load as it is fetched from an external API.",
+    "github": "https://github.com/massaracsh7/petplanet",
+    "deploy": "https://petplanet-omega.vercel.app",
+    "image": "9.png",
+    "details": [
+      "HTML5",
+      "SCSS",
+      "JavaScript",
+      "Vite"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Cup Time Online Store",
+    "description": "A cozy online shop offering a curated selection of teas, coffees, Turkish coffee pots, teapots, and more. Some data may take a few seconds to load from an external API.",
+    "github": "https://github.com/massaracsh7/cup-time",
+    "deploy": "https://cup-time-five.vercel.app",
+    "image": "10.png",
+    "details": [
+      "React",
+      "Redux",
+      "SCSS",
+      "TypeScript",
+      "Vite"
+    ]
+  }
+]
