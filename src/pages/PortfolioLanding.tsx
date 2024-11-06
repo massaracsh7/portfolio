@@ -5,7 +5,7 @@ import Hero from "../components/Hero/Hero";
 import Project from "../components/Project/Project";
 import Skills from "../components/Skills/Skills";
 import MainLayout from "../layouts/MainLayout/MainLayout";
-import styles from './PortfolioLanding.module.scss'; // SCSS file for styles
+import styles from './PortfolioLanding.module.scss';
 
 const PortfolioLanding: React.FC = () => {
   return (

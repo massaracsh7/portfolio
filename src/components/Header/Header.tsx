@@ -10,14 +10,12 @@ const Header: React.FC = () => {
 
   return (
     <header className={styles.header}>
-      {/* Бургер-меню с тремя линиями */}
       <div className={styles.burger} onClick={toggleMenu} aria-label="Toggle menu">
         <span className={`${styles.burger__line} ${isMenuOpen ? styles.burger__line_open : ''}`} />
         <span className={`${styles.burger__line} ${isMenuOpen ? styles.burger__line_open : ''}`} />
         <span className={`${styles.burger__line} ${isMenuOpen ? styles.burger__line_open : ''}`} />
       </div>
 
-      {/* Навигация, отображающаяся в зависимости от состояния isMenuOpen */}
       <nav className={`${styles.navigation} ${isMenuOpen ? styles.navigation_open : ''}`}>
         <ul className={styles.navigation__list}>
           <li className={styles.navigation__item}>
